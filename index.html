@@ -1,0 +1,202 @@
+<!--------------------------------------------
+Name: Pranjal
+Student ID: 165020215
+E-mail: pranjal1@myseneca.ca
+Section: NII
+---------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pranjal || WEB222 Final Project</title>
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles.css">
+
+   
+</head>
+<body>
+    <div class="website">
+        <!-- Navbar -->
+        <header class="navbar">
+            <nav>
+                <div class="nav-menu">
+                    <div class="menu">
+                        <ul class="nav-links">
+                            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">ABOUT ME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Menu Icon -->
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content of the Webpage -->
+        <main class="main">
+            <!-- Homepage -->
+            <section class="home" id="home">
+                <div class="home-content">
+                    <div class="home-img">
+                        <a href="index.html"><img src="./src/Images/home-img.png" alt="home-img"></a>
+                    </div>
+                    <div class="home-text">
+                        <h2>My name is <span class="color">Pranjal</span></h2>
+                        <p> I am an international student from INDIA. </p>
+                    </div>
+                    <div class="home-btns">
+                        <a download="pranjal.pdf" href="./src/Files/pranjal.pdf"><button class="btn"><i class="uil uil-import"></i>Resume</button></a>
+                        <a href="#contact"><button class="btn">Contact Me</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about" id="about">
+                <h2 class="heading">ABOUT</h2>
+                <div class="about-content">
+                    <div class="about-details">
+                        <span class="abt-span">Personal Information</span>
+                        <pre><strong>AGE:</strong>              19</pre>
+                        <pre><strong>EMAIL:</strong>            pranjal1@myseneca.ca</pre>
+                        <pre><strong>STUDENT ID:</strong>       165020215</pre>
+                        <pre><strong>CLASS SECTION:</strong>    NII</pre>
+                        <pre><strong>INSTRUCTOR:</strong>       Mr. Robin Li</pre>
+                    </div>
+                    <div class="about-text">
+                        <span class="abt-span">About Me and Academic Honesty</span>
+                        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+                        <span><strong>Date: </strong></span><p>Dec 13, 2022</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education" id="education">
+                <h2 class="heading">EDUCATION</h2>
+                <div class="education-content">
+                    <div class="education-box">
+                        <h2>Completed Schooling from:- <br> Anand Public Senior Secondary School Kapurthala, Punjab, INDIA<h2>
+                        <p>July 2021</p>
+                    </div>
+                    <div class="education-box">
+                        <h2>Persuing Diploma Program:- <br> Computer Programming, Seneca College, Newnham Campus, Ontario</h2>
+                        <p>May 2022 - September 2023(expected)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="contact" id="contact">
+                <h2 class="heading">CONTACT ME</h2>
+                <div class="contact-content">
+                    <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+                        <!-- Name -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="name format">
+
+                        <!-- Email -->
+                        <label for="email">E-mail:</label>
+                        <!-- email type wasnt used because form is validated using js so it wasn't needed -->
+                        <input type="text" name="email" id="email" placeholder="Email address..." class="email format">
+
+                        <!-- Address -->
+                        <label for="address">Current Address:</label>
+                        <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your full address" class="address"></textarea>
+
+                        <!-- Datalist for cities in Canada -->
+                        <label for="name">City:</label>
+                        <input class="format" type="text" id="city" name="city" list="suggestions" placeholder="Enter your City"/>
+                        <datalist id="suggestions">
+                            <option label="Barrie" value="Barrie"></option>
+                            <option label="Calgary" value="Calgary"></option>
+                            <option label="Charlottetown" value="Charlottetown"></option>
+                            <option label="Chibougamau" value="Chibougamau"></option>
+                            <option label="Chilliwack" value="Chilliwack"></option>
+                            <option label="Cold Lake" value="Cold Lake"></option>
+                            <option label="Dorval" value="Dorval"></option>
+                            <option label="Edmonton" value="Edmonton"></option>
+                            <option label="Flin Flon" value="Flin Flon"></option>
+                            <option label="Hamilton" value="Hamilton"></option>
+                            <option label="Iqualuit" value="Iqualuit"></option>
+                            <option label="Ottawa" value="Ottawa"></option>
+                            <option label="Miramichi" value="Miramichi"></option>
+                            <option label="Montreal" value="Montreal"></option>
+                            <option label="Red Deer" value="Red Deer"></option>
+                            <option label="Scarborough" value="Scarborough"></option>
+                            <option label="St. John" value="St. John"></option>
+                            <option label="St. John's" value="St. John's"></option>
+                            <option label="Toronto" value="Toronto"></option>
+                            <option label="Vancouver" value="Vancouver"></option>
+                            <option label="Whitehorse" value="Whitehorse"></option>
+                            <option label="Winnipeg" value="Winnipeg"></option>
+                            <option label="Yellowknife" value="Yellowknife"></option>
+                        </datalist>
+
+                        <!-- Postal Code -->
+                        <label for="pCode">Postal Code:</label>
+                        <input name="Postal_Code" type="text" id="pCode" class="format" placeholder="Postal Code">
+
+                        <!-- Purpose of this message -->
+                        <br>
+                        <div class="radio-btns">
+                            <label for="purpose">What is the purpose of this message?</label><br><br>
+                            <input type="radio" id="question" name="purpose" value="question">
+                            <label for="question">Question</label><br>
+                            <input type="radio" id="comment" name="purpose" value="comment">
+                            <label for="comment">Comment</label><br>
+                            <input type="radio" id="hiring" name="purpose" value="hiring">
+                            <label for="hiring">Hiring</label>
+                        </div>
+                        <br>
+
+                        <!-- Message -->
+                        <label for="message">Message for me:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message..." class="address"></textarea>
+
+                        <!-- Field of work selection -->
+                        <label for="field">What is your field of work?</label>
+                        <select name="field" id="field" class="format">
+                            <option value="Engineering, Manufacturing, & Technology" selected>Engineering, Manufacturing, & Technology</option>
+                            <option value="Business, Management, & Administration">Business, Management, & Administration</option>
+                            <option value="Communications & Information Systems">Communications & Information Systems</option>
+                            <option value="Agriculture, Food, & Natural Resources">Agriculture, Food, & Natural Resources</option>
+                            <option value="Health Science Technology">Health Science Technology</option>
+                            <option value="Human Services">Human Services</option>
+                            <option value="Other">Other</option>
+                         </select>                       
+
+                        <!-- Buttons -->
+                        <div class="form-btns">
+                            <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Webpage Footer -->
+        <footer class="footer">
+            <h4>Pranjal</h4>
+            <p> Thank you for visiting my website <br> <br><span>Copyright&copy; 2022</span></p>
+                
+        </footer>
+
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="./src/script.js"></script>
+</body>
+</html>
